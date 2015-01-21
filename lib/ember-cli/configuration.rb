@@ -21,6 +21,10 @@ module EmberCLI
       @npm_path ||= Helpers.which("npm")
     end
 
+    def bower_path
+      @npm_path ||= Helpers.which("bower")
+    end
+
     def build_timeout
       @build_timeout ||= 5
     end
