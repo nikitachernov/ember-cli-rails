@@ -21,7 +21,7 @@ module EmberCLI
 
     def install_dependencies
       exec "#{npm_path} install"
-      exec "#{bower_path} install"
+      exec "bower install"
     end
 
     def run
